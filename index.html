@@ -290,7 +290,7 @@ function toggleGuide(){
 }
 function saveKey(){const v=document.getElementById('api-key-input').value.trim();if(!v.startsWith('sk-ant-')){alert('That does not look like a valid Anthropic API key. It should start with sk-ant-');return;}localStorage.setItem(KS,v);showKeyOk();}
 function getKey(){return localStorage.getItem(KS)||'';}
-function showKeyOk(){const s=document.getElementById('api-section');s.className='api-banner api-key-ok';s.innerHTML='<strong>API key saved</strong>AI lookups enabled. Key stored in this browser only.';}
+function showKeyOk(){const s=document.getElementById('api-section');s.className='api-banner api-key-ok';s.innerHTML='<strong>API key saved</strong>AI lookups enabled. Key stored in this browser only.';setTimeout(()=>{s.style.display='none'},3000);}
 function getAC(){return parseInt(localStorage.getItem(ACS)||'0');}
 function incAC(){const n=getAC()+1;localStorage.setItem(ACS,n);document.getElementById('s-ai').textContent=n;}
 

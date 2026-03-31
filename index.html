@@ -125,6 +125,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div id="guide-body" style="display:none">
       <div class="guide-section">
         <div class="guide-heading">How to use</div>
+        <p><strong>First-time setup:</strong> Paste your Anthropic API key into the box at the top and click Save. Contact your Zephyr coordinator for the key. You only need to do this once per device.</p>
         <p>Type the school name from the family's request form into the search box. A list of matching schools will appear — click one to see their BYOD policy details.</p>
         <p style="margin-top:8px">If the school isn't in the database, click <strong>Look up with AI</strong> to search for it automatically (requires API key).</p>
         <div class="guide-flags-row">
@@ -290,7 +291,7 @@ function toggleGuide(){
 }
 function saveKey(){const v=document.getElementById('api-key-input').value.trim();if(!v.startsWith('sk-ant-')){alert('That does not look like a valid Anthropic API key. It should start with sk-ant-');return;}localStorage.setItem(KS,v);showKeyOk();}
 function getKey(){return localStorage.getItem(KS)||'';}
-function showKeyOk(){const s=document.getElementById('api-section');s.className='api-banner api-key-ok';s.innerHTML='<strong>API key saved</strong>AI lookups enabled. Key stored in this browser only.';setTimeout(()=>{s.style.display='none'},3000);}
+function showKeyOk(){const s=document.getElementById('api-section');s.className='api-banner api-key-ok';s.innerHTML='<strong>API key saved</strong>AI lookups enabled. Key stored in this browser only. If you need the key, contact your Zephyr coordinator.';setTimeout(()=>{s.style.display='none'},3000);}
 function getAC(){return parseInt(localStorage.getItem(ACS)||'0');}
 function incAC(){const n=getAC()+1;localStorage.setItem(ACS,n);document.getElementById('s-ai').textContent=n;}
 

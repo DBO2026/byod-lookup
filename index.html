@@ -10,16 +10,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .header{background:#1e3a5f;color:white;padding:1.25rem 2rem}
 .header-logo{font-size:20px;font-weight:600}
 .header-sub{font-size:13px;opacity:.7;margin-top:2px}
-.container{max-width:720px;margin:0 auto;padding:2rem 1.5rem}
-.api-banner{background:#fff8e1;border:1px solid #ffe082;border-radius:10px;padding:1rem 1.25rem;margin-bottom:1.5rem;font-size:13px;color:#5d4037;line-height:1.6}
+.container{max-width:720px;margin:0 auto;padding:1rem 1.5rem}
+.api-banner{background:#fff8e1;border:1px solid #ffe082;border-radius:10px;padding:0.6rem 1rem;margin-bottom:1rem;font-size:12px;color:#5d4037;line-height:1.4}
 .api-banner strong{display:block;margin-bottom:6px;font-size:14px;color:#3e2723}
 .api-banner input{width:100%;margin-top:8px;padding:8px 12px;border:1px solid #ffcc80;border-radius:6px;font-size:13px;font-family:monospace;background:white;outline:none}
 .api-save-btn{margin-top:8px;padding:6px 14px;background:#1e3a5f;color:white;border:none;border-radius:6px;font-size:13px;cursor:pointer;font-family:inherit}
 .api-key-ok{background:#e8f5e9;border-color:#a5d6a7;color:#2e7d32}
 .api-key-ok strong{color:#1b5e20}
-.stats-row{display:flex;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap}
-.stat{flex:1;min-width:90px;background:white;border:1px solid #e5e5e0;border-radius:10px;padding:.875rem 1rem;text-align:center}
-.stat-value{font-size:22px;font-weight:600;color:#1e3a5f}
+.stats-row{display:flex;gap:8px;margin-bottom:1rem;flex-wrap:wrap}
+.stat{flex:1;min-width:80px;background:white;border:1px solid #e5e5e0;border-radius:10px;padding:.5rem .75rem;text-align:center}
+.stat-value{font-size:18px;font-weight:600;color:#1e3a5f}
 .stat-label{font-size:11px;color:#999;margin-top:2px}
 .search-card{background:white;border-radius:12px;border:1px solid #e5e5e0;padding:1.5rem;margin-bottom:1.5rem}
 .search-label{font-size:13px;color:#666;margin-bottom:8px;font-weight:500}
@@ -84,7 +84,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .loading-sub{font-size:13px;color:#888;margin-top:6px}
 .error-box{background:#fff3f3;border:1px solid #ffcdd2;border-radius:8px;padding:12px 14px;font-size:13px;color:#c62828;margin-top:12px}
 .footer{text-align:center;font-size:11px;color:#bbb;margin-top:2rem;padding-bottom:2rem}
-.guide-card{background:white;border-radius:12px;border:1px solid #e5e5e0;margin-bottom:1.5rem;overflow:hidden}
+.guide-card{background:white;border-radius:12px;border:1px solid #e5e5e0;margin-bottom:0.75rem;overflow:hidden}
 .guide-toggle{width:100%;background:none;border:none;padding:1rem 1.25rem;font-size:14px;font-weight:500;color:#1e3a5f;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:inherit;text-align:left}
 .guide-toggle:hover{background:#f8f8f6}
 #guide-body{padding:0 1.25rem 1.25rem}
@@ -268,7 +268,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div class="hint">1,200+ schools across QLD, TAS, WA, SA, NT, NSW, VIC and ACT. Flags highlight hardship programs, loan devices and key notes. Policies typically updated annually — check date on each card.</div>
     <div id="suggestions"></div>
   </div>
-  <div id="result-area">
+  <div id="result-area" style="max-width:720px;margin:0 auto;">
     <div class="result-card">
       <div class="empty-state">
         <div class="empty-icon">🏫</div>
